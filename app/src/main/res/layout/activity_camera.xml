@@ -4,14 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
-        android:id="@+id/camera_preview"
+    <selfycare.com.selfycare.JavaCameraView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_weight="1"
-        android:orientation="horizontal"
-        android:layout_gravity="center"
-        android:gravity="center" />
+        android:id="@+id/fd_activity_surface_view" />
 
     <LinearLayout
         android:orientation="horizontal"
