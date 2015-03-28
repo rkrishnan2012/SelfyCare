@@ -192,7 +192,6 @@ public abstract class CameraBridgeViewBase extends SurfaceView implements Surfac
     };
 
     public void surfaceChanged(SurfaceHolder arg0, int arg1, int arg2, int arg3) {
-        Log.d(TAG, "call surfaceChanged event");
         synchronized(mSyncObject) {
             if (!mSurfaceExist) {
                 mSurfaceExist = true;
@@ -407,7 +406,6 @@ public abstract class CameraBridgeViewBase extends SurfaceView implements Surfac
             Canvas canvas = getHolder().lockCanvas();
             if (canvas != null) {
                 canvas.drawColor(0, android.graphics.PorterDuff.Mode.CLEAR);
-                Log.d(TAG, "mStretch value: " + mScale);
 
 
                 Matrix matrix = new Matrix();
